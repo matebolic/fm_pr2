@@ -1,0 +1,78 @@
+/* TAG SELECTORS */
+body {
+    width: 100vw;                       
+    height: 100vh;                      
+    margin: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    }
+
+
+img {
+    height: 200px;
+}
+
+
+/* CLASS SELECTORS */
+
+/* predefined */
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    display: none;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* own */
+
+.bigbox {
+   
+    max-width: 600px;
+    
+    display: flex;
+    background-color: red;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;               
+    align-content: stretch;
+    border-radius: 16px;
+    }
+
+/* calc(100vw - 2* 16px); */
+
+.photo_box {
+    
+    background-color: green;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    width: 300px;
+    max-width: 300px;
+}
+
+.text_box {
+    box-sizing: border-box;
+    background-color: blue;
+    padding: 35px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    width: 300px;
+    
+}
+
+.button {
+    min-width: 235px;
+    max-width: 295px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: rgb(121, 121, 185);
+}
+
+.button:hover {
+    background-color: rgb(99, 75, 75);
+}
